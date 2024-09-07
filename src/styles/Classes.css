@@ -1,0 +1,209 @@
+.cards-section {
+  width: 100vw;
+  max-width: 1200px;
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.activity-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 2px solid #333;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.activity-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.activity-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.activity-desc {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.book-btn {
+  background-color: #fca311;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #ff9900;
+}
+
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.5rem auto;
+}
+
+.modal-content {
+  background: #1c1c1c;
+  color: #f5f5f5;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.modal-header {
+  border-bottom: 1px solid #333;
+  padding: 1.5rem;
+  background: #2c2c2c;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.close {
+  color: #f5f5f5;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+}
+
+.close:hover {
+  color: #ff8c00;
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #333;
+  padding: 1rem;
+  background: #2c2c2c;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-control {
+  background: #333;
+  border: 1px solid #444;
+  color: #f5f5f5;
+  border-radius: 10px;
+  padding: 0.75rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  background: #444;
+  border-color: #ff8c00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.3);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f5f5f5;
+}
+
+.btn-primary {
+  background: #ff8c00;
+  border: none;
+  color: #1c1c1c;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(255, 140, 0, 0.3);
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e07b00;
+  box-shadow: 0 6px 12px rgba(224, 123, 0, 0.4);
+}
+
+.btn-secondary {
+  background: #444;
+  border: none;
+  color: #f5f5f5;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .cards-section {
+      grid-template-columns: 1fr;
+      padding: 40px 10px;
+  }
+
+  .activity-icon {
+      font-size: 2rem;
+  }
+
+  .activity-title {
+      font-size: 1.5rem;
+  }
+
+  .activity-desc {
+      font-size: 1rem;
+  }
+
+  .book-btn {
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+      margin: 1rem auto;
+      max-width: 90%;
+  }
+
+  .modal-body {
+      padding: 1rem;
+  }
+
+  .form-control {
+      font-size: 0.875rem;
+  }
+}

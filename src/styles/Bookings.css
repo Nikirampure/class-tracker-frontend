@@ -1,0 +1,117 @@
+.booked-classes-container {
+  margin-top: 100px;
+  width: 100vw;
+  max-width: 1200px;
+  padding: 40px 20px;
+  background: #1a1a1a;
+  color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filter-select {
+  background: #333;
+  border: 1px solid #444;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-select:hover {
+  background: #444;
+}
+
+.classes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.class-card {
+  position: relative;
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #444;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fca311;
+}
+
+.cancel-icon {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.class-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.class-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fca311;
+  margin-bottom: 10px;
+}
+
+.class-date-time {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.class-details {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background: #fca311;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #ff9900;
+}
+
+.pagination-info {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.date-picker {
+  z-index: 233000 !important;
+}

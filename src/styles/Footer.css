@@ -1,0 +1,161 @@
+/* Info Section */
+.info-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #222, #111);
+    text-align: center;
+    color: #ccc;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fca311;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.info-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.info-feature {
+    max-width: 300px;
+    flex: 1;
+    text-align: left;
+}
+
+.info-feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fca311;
+}
+
+.info-feature p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fca311;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer-section a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fca311;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .info-section h2 {
+        font-size: 2rem; 
+    }
+
+    .info-section p {
+        font-size: 1rem;
+    }
+
+    .info-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-feature {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-section p {
+        font-size: 0.9rem;
+    }
+
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 0.9rem;
+    }
+}
