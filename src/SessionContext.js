@@ -42,7 +42,7 @@ export const SessionProvider = ({ children }) => {
       }
 
       const response = await fetch(
-        `http://localhost:8000/user_bookings/${userId}`
+        `https://slot-booking-backend-o117.onrender.com/user_bookings/${userId}`
       );
       const data = await response.json();
       setBookings(data.user_bookings || []);
@@ -63,7 +63,7 @@ export const SessionProvider = ({ children }) => {
         return;
       }
 
-      const response = await fetch("http://localhost:8000/cancel_booking/", {
+      const response = await fetch("https://slot-booking-backend-o117.onrender.com/cancel_booking/", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -95,7 +95,7 @@ export const SessionProvider = ({ children }) => {
 
   const fetchClasses = async () => {
     try {
-      const response = await fetch("http://localhost:8000/class_list");
+      const response = await fetch("https://slot-booking-backend-o117.onrender.com/class_list");
       const data = await response.json();
       console.log(data);
       setClasses(
@@ -156,7 +156,7 @@ export const SessionProvider = ({ children }) => {
       };
 
       try {
-        const response = await fetch("http://localhost:8000/book_slot", {
+        const response = await fetch("https://slot-booking-backend-o117.onrender.com/book_slot", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
